@@ -1,0 +1,13 @@
+{% extends "_layouts/base.njk" %}
+
+{% set title='Sample Page' %}
+
+{% block content %}
+<div class="h-screen flex flex-col items-center justify-center bg-blue-50 bg-opacity-25">
+    <h1 class="text-5xl text-blue-600 font-bold mb-6">Sample Page.</h1>
+    <div class="mb-3">
+        {% include "./_components/list-data.njk" %}
+    </div>
+    <img src="assets/google.png" alt="" class="h-16">
+</div>
+{% endblock %}
